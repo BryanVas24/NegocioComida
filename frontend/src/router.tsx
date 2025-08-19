@@ -1,10 +1,11 @@
 import ErrorPage from "./pages/ErrorPage";
 import { createBrowserRouter } from "react-router-dom";
+import Home from "./pages/Home";
 
 export const routes = createBrowserRouter([
   {
     path: "/",
-    element: <h1>Hola mundo</h1>,
+    element: <Home />,
     errorElement: <ErrorPage />,
     children: [],
   },
