@@ -1,1 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap");
 @import "tailwindcss";
+
+@theme {
+  /*Colores*/
+  --color-mainPink: #ffacc6;
+  --color-secondaryPink: #ffc0d4;
+  --color-lessPink: #78dcca;
+  --color-vanishPink: #ffeaf1;
+  /*Fuentes*/
+  --font-Main: "Euphoria Script", cursive;
+}
