@@ -4,7 +4,7 @@ import Logo from "@/assets/LogoCastillo.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-mainPink text-white py-8">
+    <footer className="bg-mainColor text-textAndBg py-8">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Logo + descripción */}
         <div className="flex flex-col items-center md:items-start gap-3">
@@ -45,7 +45,7 @@ export default function Footer() {
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white text-mainPink p-2 rounded-full hover:scale-110 transition-transform"
+              className="bg-white text-mainColor p-2 rounded-full hover:scale-110 transition-transform"
             >
               <FaFacebookF size={18} />
             </a>
@@ -53,7 +53,7 @@ export default function Footer() {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] text-white p-2 rounded-full hover:scale-110 transition-transform"
+              className="bg-white text-mainColor p-2 rounded-full hover:scale-110 transition-transform"
             >
               <FaInstagram size={18} />
             </a>
@@ -61,7 +61,7 @@ export default function Footer() {
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white text-mainPink p-2 rounded-full hover:scale-110 transition-transform"
+              className="bg-white text-mainColor p-2 rounded-full hover:scale-110 transition-transform"
             >
               <FaTwitter size={18} />
             </a>

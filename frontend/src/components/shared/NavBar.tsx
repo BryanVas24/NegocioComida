@@ -15,18 +15,18 @@ export default function NavBar() {
 
   // Botones de autenticación
   const authButtons = [
-    { path: "/login", label: "Login", style: "bg-white text-mainPink" },
+    { path: "/login", label: "Login", style: "bg-white text-mainColor" },
     {
       path: "/registro",
       label: "Registro",
-      style: "bg-mainPink text-white border border-white",
+      style: "bg-mainColor text-textAndBg border border-white",
     },
   ];
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="bg-mainPink p-5 md:p-0 md:py-2">
+    <nav className="bg-mainColor p-5 md:p-0 md:py-2">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link to="/">
@@ -46,7 +46,7 @@ export default function NavBar() {
               className={`font-Main text-4xl transition-colors ${
                 location.pathname === link.path
                   ? "underline text-yellow-300"
-                  : "text-white hover:text-yellow-200"
+                  : "text-textAndBg hover:text-yellow-200"
               }`}
             >
               {link.label}
@@ -70,7 +70,7 @@ export default function NavBar() {
         {/* Botón Hamburguesa (Mobile) */}
         <button
           onClick={toggleMenu}
-          className="md:hidden text-white focus:outline-none"
+          className="md:hidden text-textAndBg focus:outline-none"
         >
           {isOpen ? <FiX size={28} /> : <FiMenu size={28} />}
         </button>
@@ -87,7 +87,7 @@ export default function NavBar() {
               className={`font-Main text-2xl transition-colors ${
                 location.pathname === link.path
                   ? "underline text-yellow-300"
-                  : "text-white hover:text-yellow-200"
+                  : "text-textAndBg hover:text-yellow-200"
               }`}
             >
               {link.label}

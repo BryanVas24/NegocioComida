@@ -3,10 +3,11 @@
 
 @theme {
   /*Colores*/
-  --color-mainPink: #ffacc6;
-  --color-secondaryPink: #ffc0d4;
-  --color-lessPink: #78dcca;
-  --color-vanishPink: #ffeaf1;
+  --color-mainColor: #ffacc6;
+  --color-secondaryColor: #ffc0d4;
+  --color-lessColor: #78dcca;
+  --color-vanishColor: #ffeaf1;
+  --color-textAndBg: #fbfbf9;
   /*Fuentes*/
   --font-Main: "Euphoria Script", cursive;
 }
