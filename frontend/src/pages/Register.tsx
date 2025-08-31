@@ -1,3 +1,9 @@
+import LoginAndRegisterBG from "@AppComponents/auth/LoginAndRegisterBG";
+
 export default function Register() {
-  return <div>Register</div>;
+  return (
+    <LoginAndRegisterBG title="Crear Cuenta">
+      <p>jkdasjkhjk</p>
+    </LoginAndRegisterBG>
+  );
 }
