@@ -12,10 +12,12 @@
       "@/assets/*": ["assets/*"],
       "@/components/*": ["components/*"],
       "@/helpers/*": ["helpers/*"],
+      "@/hooks/*": ["hooks/*"],
       "@/layouts/*": ["layouts/*"],
       "@/pages/*": ["pages/*"],
       "@/types/*": ["types/*"],
-      "@AppComponents/*": ["./components/app/*"]
+      "@AppComponents/*": ["./components/app/*"],
+      "@AppHooks/*": ["hooks/app/*"]
     },
     /* Bundler mode */
     "moduleResolution": "bundler",

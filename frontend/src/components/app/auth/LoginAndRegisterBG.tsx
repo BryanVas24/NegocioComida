@@ -7,7 +7,7 @@ export default function LoginAndRegisterBG({
 }) {
   return (
     <section className="bg-[url('@/assets/bgAuthViews.png')] h-screen bg-no-repeat bg-cover flex items-center justify-center ">
-      <div className="bg-white p-5 rounded-2xl shadow-xl md:w-xl">
+      <div className="bg-white p-5 rounded-2xl shadow-xl w-9/12 md:w-lg xl:w-2xl ">
         <h2 className="text-5xl font-Main font-bold mb-4 text-center text-mainColor">
           {title}
         </h2>

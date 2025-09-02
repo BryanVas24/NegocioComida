@@ -7,7 +7,7 @@ type WarnMessageProps = {
 
 export default function WarnMessage({ errorMessage }: WarnMessageProps) {
   return (
-    <div className="flex justify-center items-center rounded-2xl border-2 border-lessColor text-lessColor text-2xl p-2 m-2">
+    <div className="flex justify-center items-center rounded-2xl border-2 border-lessColor text-lessColor text-sm md:text-lg p-2 m-2">
       <p>{errorMessage}</p> <IoIosWarning />
     </div>
   );

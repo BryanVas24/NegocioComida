@@ -10,6 +10,7 @@ export default defineConfig({
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
       "@AppComponents": fileURLToPath(new URL("./src/components/app", import.meta.url)),
+      "@AppHooks": fileURLToPath(new URL("./src/hooks/app", import.meta.url)),
     },
   },
 });
