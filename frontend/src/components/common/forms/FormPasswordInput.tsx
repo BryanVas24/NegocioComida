@@ -12,7 +12,13 @@ type FormPasswordInputProps = {
   name?: string;
 };
 
-export default function FormPasswordInput({labelText,id,placeholder,error, ...props}: FormPasswordInputProps) {
+export default function FormPasswordInput({
+  labelText,
+  id,
+  placeholder,
+  error,
+  ...props
+}: FormPasswordInputProps) {
   //Uso del custom hook para manejar el toggle del password
   const { showPassword, toggleShowPassword } = usePasswordToggle();
 

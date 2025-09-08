@@ -9,18 +9,19 @@ type FormInputProps = {
   type: string;
   placeholder?: string;
   name?: string;
+  extraStyles?: string;
 };
 
-export default function FormInput({id, labelText, error, type, placeholder, ...props}: FormInputProps) {
+export default function FormInput({id, labelText, error, type, placeholder,extraStyles, ...props}: FormInputProps) {
   return (
-    <div className="flex flex-col gap-1">
+    <div className={`flex flex-col gap-1 ${extraStyles}`}>
       <label htmlFor={id}>{labelText}</label>
       <input
         autoComplete="on"
         id={id}
         type={type}
         placeholder={placeholder}
-        className={inputClass}
+        className={`${inputClass} `}
         {...props}
       />
       {/*Este es el error que se muestra en la interfaz */}

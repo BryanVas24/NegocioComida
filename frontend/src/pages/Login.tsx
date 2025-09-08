@@ -11,7 +11,7 @@ export default function Login() {
   return (
     <LoginAndRegisterBG title="Iniciar Sesión">
       <form
-        className="flex justify-center flex-col gap-5 "
+        className="flex justify-center flex-col gap-5 animate__animated animate__fadeInBottomRight "
         onSubmit={handleSubmit(onSubmit)}
       >
         <FormInput
@@ -22,7 +22,10 @@ export default function Login() {
           error={errors.email?.message}
           {...register("email", {
             required: "El email es obligatorio",
-            pattern: { value: /^\S+@\S+$/i, message: "El formato de email debe incluir @" },
+            pattern: {
+              value: /^\S+@\S+$/i,
+              message: "El formato de email debe incluir @",
+            },
           })}
         />
 
