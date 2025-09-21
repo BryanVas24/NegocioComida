@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 import cors from "cors";
-import { testDatabaseConnection } from "./config/database";
+import { testDatabaseConnection } from "@config/database";
 
 const server = express();
 testDatabaseConnection();

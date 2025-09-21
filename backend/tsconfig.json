@@ -6,11 +6,20 @@
     "target": "ESNext",
     "moduleResolution": "NodeNext",
     "module": "NodeNext",
-    "strict": false,
+    "strict": true,
     "sourceMap": true,
     "esModuleInterop": true,
-    "declaration": true
+    "declaration": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@config/*": ["config/*"],
+      "@controllers/*": ["controllers/*"],
+      "@models/*": ["models/*"],
+      "@routes/*": ["routes/*"],
+      "@utils/*": ["utils/*"]
+    }
   },
+  "ts-node": { "require": ["tsconfig-paths/register"] },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "dist"]
 }
