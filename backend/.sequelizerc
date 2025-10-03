@@ -1,0 +1,10 @@
+//acá se usa requeire porque sequelize-cli no soporta import/export a menos que se cambie en el package.json
+const path = require("path");
+
+//Rutas a los distintos archivos de configuración, modelos, migraciones y seeds
+module.exports = {
+  config: path.resolve('src/database/config', 'database.js'),
+  'models-path': path.resolve('src/database/models'),
+  'seeders-path': path.resolve('src/database/seed'),
+  'migrations-path': path.resolve('src/database/migrations'),
+};

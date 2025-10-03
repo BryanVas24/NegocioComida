@@ -20,6 +20,6 @@
     }
   },
   "ts-node": { "require": ["tsconfig-paths/register"] },
-  "include": ["src/**/*.ts"],
+  "include": ["src/**/*.ts", "src/database/models/user.js", "src/database/models/rolPermission.js", "src/database/models/rol.js", "src/database/models/relationships.js", "src/database/models/product.js", "src/database/models/permission.js", "src/database/models/orderProduct.js", "src/database/models/order.js", "src/database/models/module.js", "src/database/models/customer.js"],
   "exclude": ["node_modules", "dist"]
 }
